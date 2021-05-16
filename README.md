@@ -1,2 +1,1 @@
-# deferred_dash
-Dash App for visualizing the Deferred Acceptance stable matching algorithm.
+A Dash App designed to teach the Deferred Acceptance algorithm in a visual way. Largely derived from a [previous notebook using the same rendering engines](https://github.com/jbrightuniverse/VisualDeferredAcceptance/blob/main/deferred_acceptance.ipynb) and partly inspired by [Amedeus D'Souza's Mapinator](https://github.com/michaelpetersubc/mapinator/blob/master/mapinator_readme/mapinator_readme.md).
