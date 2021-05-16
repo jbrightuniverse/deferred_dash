@@ -105,7 +105,7 @@ def localized_render_stage(state = None, form = None, program_data = None, pref 
     while len(working_copy_of_students[student_names[counter]]["form"]) == 0 or working_copy_of_students[student_names[counter]]["accepted"] == True:
         counter += 1
         if counter == len(student_names):
-            img = Image.new("RGBA", (450, max(40 * len(student_names), 80 * len(schools))), (255, 255, 255, 0))
+            img = Image.new("RGBA", (450, max(40 * len(student_names), 80 * len(program_data.keys()))), (255, 255, 255, 0))
             draw = ImageDraw.Draw(img)
             school_names = list(program_data.keys())
             for school_name in program_data:
@@ -132,7 +132,7 @@ def localized_render_stage(state = None, form = None, program_data = None, pref 
     ranges = []
 
     while True:
-        img = Image.new("RGBA", (450, max(40 * len(student_names), 80 * len(schools))), (255, 255, 255, 0))
+        img = Image.new("RGBA", (450, max(40 * len(student_names), 80 * len(program_data.keys()))), (255, 255, 255, 0))
         draw = ImageDraw.Draw(img)
 
         school_names = list(program_data.keys())
